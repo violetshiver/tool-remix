@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "tool-remix",
+	"version": "${version}",
+	"name": "Tool Remix",
+		"description": "Makes it so have to upgrade Copper tools to Iron, and then to Diamond. Keep your one precious tool with you throughout your world!",
+	"authors": [
+		"violetshiver"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tool-remix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"violetshiver.toolremix.ToolRemix"
+		],
+		"client": [
+			"violetshiver.toolremix.client.ToolRemixClient"
+		],
+		"fabric-datagen": [
+			"violetshiver.toolremix.client.ToolRemixDataGenerator"
+		]
+	},
+	"mixins": [
+		"tool-remix.mixins.json",
+		{
+			"config": "tool-remix.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
