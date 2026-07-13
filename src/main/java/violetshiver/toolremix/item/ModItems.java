@@ -30,7 +30,10 @@ public class ModItems {
                     Component.translatable(ToolRemix.MOD_ID + ":smithing_template.iron.upgrade.additions_slot_description"),
                     SmithingTemplateItems.getArmorTrimEmptyBaseSlotTextures(),
                     Collections.singletonList(SmithingTemplateItems.EMPTY_SLOT_INGOT_TEXTURE),
-                    new Item.Properties()
+                    new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(
+                        ToolRemix.MOD_ID,
+                        "iron_upgrade_smithing_template"
+                    )))
             )
     );
 
@@ -45,7 +48,10 @@ public class ModItems {
                     Component.translatable(ToolRemix.MOD_ID + ":smithing_template.diamond.upgrade.additions_slot_description"),
                     SmithingTemplateItems.getArmorTrimEmptyBaseSlotTextures(),
                     Collections.singletonList(SmithingTemplateItems.EMPTY_SLOT_DIAMOND_TEXTURE),
-                    new Item.Properties()
+                    new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(
+                        ToolRemix.MOD_ID,
+                        "diamond_upgrade_smithing_template"
+                    )))
             )
     );
 
