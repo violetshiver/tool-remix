@@ -20,5 +20,6 @@ public class ModModelGenerator extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
         itemModelGenerators.generateFlatItem(ModItems.COPPER_TO_IRON_UPGRADE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.IRON_TO_DIAMOND_UPGRADE, ModelTemplates.FLAT_ITEM);
     }
 }
