@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SmithingTemplateItem;
 import violetshiver.toolremix.ToolRemix;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
@@ -28,7 +29,7 @@ public class ModItems {
                     Component.translatable(ToolRemix.MOD_ID + ":smithing_template.iron.upgrade.base_slot_description"),
                     Component.translatable(ToolRemix.MOD_ID + ":smithing_template.iron.upgrade.additions_slot_description"),
                     SmithingTemplateItems.getArmorTrimEmptyBaseSlotTextures(),
-                    List.of(Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_ingot")),
+                    Collections.singletonList(SmithingTemplateItems.EMPTY_SLOT_INGOT_TEXTURE),
                     new Item.Properties()
             )
     );
@@ -43,7 +44,7 @@ public class ModItems {
                     Component.translatable(ToolRemix.MOD_ID + ":smithing_template.diamond.upgrade.base_slot_description"),
                     Component.translatable(ToolRemix.MOD_ID + ":smithing_template.diamond.upgrade.additions_slot_description"),
                     SmithingTemplateItems.getArmorTrimEmptyBaseSlotTextures(),
-                    List.of(Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_diamond")),
+                    Collections.singletonList(SmithingTemplateItems.EMPTY_SLOT_DIAMOND_TEXTURE),
                     new Item.Properties()
             )
     );
