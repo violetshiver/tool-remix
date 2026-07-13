@@ -1,3 +1,10 @@
 {
-  "item.toolremix.iron_upgrade_smithing_template": "Smithing Template"
+  "item.tool-remix.iron_upgrade_smithing_template": "Iron Upgrade",
+  "item.tool-remix.diamond_upgrade_smithing_template": "Diamond Upgrade",
+
+  "tool-remix:smithing_template.iron.upgrade.applies_to": "Copper Equipment",
+  "tool-remix:smithing_template.iron.upgrade.ingredients": "Iron Ingot",
+
+  "tool-remix:smithing_template.diamond.upgrade.applies_to": "Iron Equipment",
+  "tool-remix:smithing_template.diamond.upgrade.ingredients": "Diamond"
 }
