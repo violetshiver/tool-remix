@@ -15,11 +15,11 @@ public class SmithingTemplateItems {
     public static final Identifier EMPTY_SLOT_SWORD_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_sword");
     public static final Identifier EMPTY_SLOT_SHOVEL_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_shovel");
     public static final Identifier EMPTY_SLOT_PICKAXE_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_pickaxe");
-    public static final Identifier EMPTY_SLOT_INGOT_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_ingot");
+    public static final Identifier EMPTY_SLOT_INGOT_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "gui/sprites/container/slot/ingot");
     public static final Identifier EMPTY_SLOT_REDSTONE_DUST_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_redstone_dust");
     public static final Identifier EMPTY_SLOT_QUARTZ_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_quartz");
     public static final Identifier EMPTY_SLOT_EMERALD_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_emerald");
-    public static final Identifier EMPTY_SLOT_DIAMOND_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_diamond");
+    public static final Identifier EMPTY_SLOT_DIAMOND_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "gui/sprites/container/slot/diamond");
     public static final Identifier EMPTY_SLOT_LAPIS_LAZULI_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_lapis_lazuli");
     public static final Identifier EMPTY_SLOT_AMETHYST_SHARD_TEXTURE = Identifier.fromNamespaceAndPath("minecraft", "item/empty_slot_amethyst_shard");
 
