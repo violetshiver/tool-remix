@@ -22,7 +22,8 @@
 			"violetshiver.toolremix.client.ToolRemixClient"
 		],
 		"fabric-datagen": [
-			"violetshiver.toolremix.client.ToolRemixDataGenerator"
+			"violetshiver.toolremix.ToolRemixMainDataGenerator",
+			"violetshiver.toolremix.client.ToolRemixClientDataGenerator"
 		]
 	},
 	"mixins": [

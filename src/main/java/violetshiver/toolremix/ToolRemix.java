@@ -6,6 +6,7 @@ import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import violetshiver.toolremix.item.ModItems;
 
 public class ToolRemix implements ModInitializer {
 	public static final String MOD_ID = "tool-remix";
@@ -15,6 +16,9 @@ public class ToolRemix implements ModInitializer {
 	public void onInitialize() {
 
 		LOGGER.info("Hello Fabric world!");
+
+		ModItems.registerModItems();
+
 	}
 
 	public static Identifier id(String path) {
