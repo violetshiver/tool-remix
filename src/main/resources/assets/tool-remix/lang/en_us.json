@@ -6,5 +6,6 @@
   "tool-remix:smithing_template.iron.upgrade.ingredients": "Iron Ingot",
 
   "tool-remix:smithing_template.diamond.upgrade.applies_to": "Iron Equipment",
-  "tool-remix:smithing_template.diamond.upgrade.ingredients": "Diamond"
+  "tool-remix:smithing_template.diamond.upgrade.ingredients": "Diamond",
+  "creativemodetab.toolremix.upgrade_items": "Tool Remix"
 }

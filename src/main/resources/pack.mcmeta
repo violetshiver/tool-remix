@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Remove vanilla recipes that we don't like.",
+    "min_format": [107, 1],
+    "max_format": [107, 1]
+  }
+}

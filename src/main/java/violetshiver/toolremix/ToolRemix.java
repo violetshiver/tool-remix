@@ -6,6 +6,7 @@ import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import violetshiver.toolremix.creativemodetab.ModCreativeModeTabs;
 import violetshiver.toolremix.item.ModItems;
 
 public class ToolRemix implements ModInitializer {
@@ -18,6 +19,7 @@ public class ToolRemix implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		ModItems.registerModItems();
+		ModCreativeModeTabs.registerModCreativeModTabs();
 
 	}
 

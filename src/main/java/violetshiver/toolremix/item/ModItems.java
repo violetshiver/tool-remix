@@ -59,10 +59,6 @@ public class ModItems {
 
         ToolRemix.LOGGER.info("Now adding mod items...");
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register(output -> {
-            output.accept(COPPER_TO_IRON_UPGRADE);
-            output.accept(IRON_TO_DIAMOND_UPGRADE);
-        });
 
     }
 
