@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tool-remix:iron_smithing_upgrade_template"
+  },
+  "base": {
+    "item": "minecraft:copper_axe"
+  },
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "minecraft:iron_pickaxe"
+  }
+}
