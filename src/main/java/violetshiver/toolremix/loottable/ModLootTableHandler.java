@@ -32,7 +32,7 @@ public class ModLootTableHandler {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (!source.isBuiltin()) return;
 
-            if (key.equals(DUNGEON) || key.equals(CORRIDOR) || key.equals(VAULT)) {
+            if (key.equals(DUNGEON) || key.equals(VAULT)) {
                 tableBuilder.pool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0f))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(1))
@@ -40,12 +40,20 @@ public class ModLootTableHandler {
                 );
             }
 
-            else if (key.equals(MINESHAFT)) {
+            else if (key.equals(CORRIDOR)) {
                 tableBuilder.pool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0f))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(1))
+                        .add(EmptyLootItem.emptyItem().setWeight(5)).build()
+                );
+            }
+
+            else if (key.equals(MINESHAFT)) {
+                tableBuilder.pool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0f))
+                        .add(LootItem.lootTableItem(copperToIron).setWeight(3))
                         .add(LootItem.lootTableItem(ironToDiamond).setWeight(1))
-                        .add(EmptyLootItem.emptyItem().setWeight(98)).build()
+                        .add(EmptyLootItem.emptyItem().setWeight(3)).build()
                 );
             }
 
@@ -54,7 +62,7 @@ public class ModLootTableHandler {
                         .setRolls(ConstantValue.exactly(1.0f))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(2))
                         .add(LootItem.lootTableItem(ironToDiamond).setWeight(3))
-                        .add(EmptyLootItem.emptyItem().setWeight(33)).build()
+                        .add(EmptyLootItem.emptyItem().setWeight(35)).build()
                 );
             }
 
