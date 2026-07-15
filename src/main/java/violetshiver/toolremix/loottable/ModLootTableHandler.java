@@ -53,7 +53,7 @@ public class ModLootTableHandler {
                         .setRolls(ConstantValue.exactly(1.0f))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(3))
                         .add(LootItem.lootTableItem(ironToDiamond).setWeight(1))
-                        .add(EmptyLootItem.emptyItem().setWeight(3)).build()
+                        .add(EmptyLootItem.emptyItem().setWeight(8)).build()
                 );
             }
 
