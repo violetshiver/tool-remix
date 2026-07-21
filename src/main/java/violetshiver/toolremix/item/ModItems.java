@@ -44,4 +44,8 @@ public class ModItems {
             List.of(SmithingTemplateItems.EMPTY_SLOT_DIAMOND_TEXTURE)
     ));
 
+    public static final Item RAW_COPPER_NUGGET = registerItem("raw_copper_nugget", new Item(new Item.Properties()));
+    public static final Item RAW_IRON_NUGGET = registerItem("raw_iron_nugget", new Item(new Item.Properties()));
+    public static final Item RAW_GOLD_NUGGET = registerItem("raw_gold_nugget", new Item(new Item.Properties()));
+
 }

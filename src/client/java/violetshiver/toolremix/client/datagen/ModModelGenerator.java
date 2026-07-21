@@ -21,5 +21,10 @@ public class ModModelGenerator extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerator) {
         itemModelGenerator.generateFlatItem(ModItems.IRON_SMITHING_UPGRADE, ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(ModItems.DIAMOND_SMITHING_UPGRADE, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerator.generateFlatItem(ModItems.RAW_COPPER_NUGGET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ModItems.RAW_IRON_NUGGET, ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(ModItems.RAW_GOLD_NUGGET, ModelTemplates.FLAT_ITEM);
+
     }
 }
