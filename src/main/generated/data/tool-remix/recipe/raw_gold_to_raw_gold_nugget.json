@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "raw_ore",
+  "ingredients": [
+    "minecraft:raw_gold"
+  ],
+  "result": {
+    "count": 9,
+    "id": "tool-remix:raw_gold_nugget"
+  }
+}

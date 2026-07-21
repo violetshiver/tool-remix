@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_iron_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tool-remix:raw_iron_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tool-remix:raw_iron_nugget_to_raw_iron"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_iron_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tool-remix:raw_iron_nugget_to_raw_iron"
+    ]
+  }
+}

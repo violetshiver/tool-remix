@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_gold_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tool-remix:raw_gold_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tool-remix:raw_gold_nugget_to_raw_gikd"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_gold_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tool-remix:raw_gold_nugget_to_raw_gikd"
+    ]
+  }
+}
