@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_copper_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tool-remix:raw_copper_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tool-remix:raw_copper"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_copper_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tool-remix:raw_copper"
+    ]
+  }
+}
