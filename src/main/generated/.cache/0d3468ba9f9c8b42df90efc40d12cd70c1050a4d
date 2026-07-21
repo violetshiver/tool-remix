@@ -1,5 +1,11 @@
-// 26.2	-999999999-01-01T00:00:00	Tool Remix/Model Definitions
+// 26.1.2	-999999999-01-01T00:00:00	Tool Remix/Model Definitions
 1add5d18725f726831de73efc9de01a0bf99114b assets/tool-remix/items/diamond_upgrade_smithing_template.json
 6a235c585f566d7c36bf293c632bdc4de4798e19 assets/tool-remix/items/iron_upgrade_smithing_template.json
+968af8ea845174484e87a4363148c552f5be9b11 assets/tool-remix/items/raw_copper_nugget.json
+2d09b9b11bbf3a1352902c0d7d15aa4e15ca16d3 assets/tool-remix/items/raw_gold_nugget.json
+dd94f4a67307387db14e856ef13ce2ae063b7a91 assets/tool-remix/items/raw_iron_nugget.json
 abf355c7309c2209016f0a88a18b2452b5c9e290 assets/tool-remix/models/item/diamond_upgrade_smithing_template.json
 7d0ef07b0c3ba8edc4db55717fd702fe929a5fa6 assets/tool-remix/models/item/iron_upgrade_smithing_template.json
+807c9c1b158f4b9798ec108335282ae562a72c80 assets/tool-remix/models/item/raw_copper_nugget.json
+3f1dc26288420bdc83e4d1fecd0ff5fefeecf053 assets/tool-remix/models/item/raw_gold_nugget.json
+6c6d40882fcb83413ab7256cff4d7997048295cd assets/tool-remix/models/item/raw_iron_nugget.json

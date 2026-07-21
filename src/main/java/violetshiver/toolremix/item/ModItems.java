@@ -1,20 +1,16 @@
 package violetshiver.toolremix.item;
 
 
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SmithingTemplateItem;
 import violetshiver.toolremix.ToolRemix;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
@@ -33,6 +29,10 @@ public class ModItems {
     private static final Identifier EMPTY_SLOT_PICKAXE = Identifier.withDefaultNamespace("container/slot/pickaxe");
     private static final Identifier EMPTY_SLOT_INGOT = Identifier.withDefaultNamespace("container/slot/ingot");
     private static final Identifier EMPTY_SLOT_DIAMOND = Identifier.withDefaultNamespace("container/slot/diamond");
+//    private static final Identifier EMPTY_SLOT_AMETHYST = Identifier.withDefaultNamespace("container/slot/amethyst");
+//    private static final Identifier EMPTY_SLOT_LAPIS = Identifier.withDefaultNamespace("container/slot/lapis");
+//    private static final Identifier EMPTY_SLOT_CHORUS = Identifier.fromNamespaceAndPath(ToolRemix.MOD_ID, "gui/container/slot/chorus");
+//    private static final Identifier EMPTY_SLOT_ECHO = Identifier.fromNamespaceAndPath(ToolRemix.MOD_ID, "gui/container/slot/echo");
 
     private static List<Identifier> createUpgradeIconList() {
         return List.of(EMPTY_SLOT_HELMET, EMPTY_SLOT_SWORD, EMPTY_SLOT_CHESTPLATE, EMPTY_SLOT_PICKAXE, EMPTY_SLOT_LEGGINGS, EMPTY_SLOT_AXE, EMPTY_SLOT_BOOTS, EMPTY_SLOT_HOE, EMPTY_SLOT_SHOVEL, EMPTY_SLOT_NAUTILUS_ARMOR, EMPTY_SLOT_SPEAR);
@@ -73,6 +73,28 @@ public class ModItems {
                     )))
             )
     );
+
+//    public static final Item GOLD_IMBUEMENT_UPGRADE = Registry.register(BuiltInRegistries.ITEM, (
+//                    ResourceKey.create(BuiltInRegistries.ITEM.key(),
+//                            Identifier.fromNamespaceAndPath(ToolRemix.MOD_ID, "gold_imbuement_smithing_template")
+//                    )),
+//            new SmithingTemplateItem(
+//                    Component.translatable(ToolRemix.MOD_ID + ":smithing_template.gold.upgrade.applies_to").withStyle(SmithingTemplateItems.SMITHING_TEMPLATE_DESCRIPTION_FORMATTING),
+//                    Component.translatable(ToolRemix.MOD_ID + ":smithing_template.gold.upgrade.ingredients").withStyle(SmithingTemplateItems.SMITHING_TEMPLATE_DESCRIPTION_FORMATTING),
+//                    Component.translatable(ToolRemix.MOD_ID + ":smithing_template.gold.upgrade.base_slot_description"),
+//                    Component.translatable(ToolRemix.MOD_ID + ":smithing_template.gold.upgrade.additions_slot_description"),
+//                    createUpgradeIconList(),
+//                    List.of(EMPTY_SLOT_AMETHYST, EMPTY_SLOT_LAPIS, EMPTY_SLOT_ECHO, EMPTY_SLOT_CHORUS),
+//                    new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(
+//                            ToolRemix.MOD_ID,
+//                            "gold_imbuement_smithing_template"
+//                    )))
+//            )
+//    );
+
+    public static final Item RAW_COPPER_NUGGET = registerItem("raw_copper_nugget", Item::new);
+    public static final Item RAW_IRON_NUGGET = registerItem("raw_iron_nugget", Item::new);
+    public static final Item RAW_GOLD_NUGGET = registerItem("raw_gold_nugget", Item::new);
 
     public static void registerModItems() {
 

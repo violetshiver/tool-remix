@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#o#",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:iron_ingot",
+    "o": "tool-remix:diamond_upgrade_smithing_template",
+    "C": "minecraft:chiseled_deepslate"
+  },
+  "result": {
+    "id": "tool-remix:diamond_upgrade_smithing_template",
+    "count": 2
+  }
+}

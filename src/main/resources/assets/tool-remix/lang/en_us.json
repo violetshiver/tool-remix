@@ -13,5 +13,10 @@
 
   "tool-remix:smithing_template.diamond.upgrade.applies_to": "Iron Equipment",
   "tool-remix:smithing_template.diamond.upgrade.ingredients": "Diamond",
+
+  "item.tool-remix.raw_copper_nugget": "Raw Copper Nugget",
+  "item.tool-remix.raw_iron_nugget": "Raw Iron Nugget",
+  "item.tool-remix.raw_gold_nugget": "Raw Gold Nugget",
+
   "creativemodetab.toolremix.upgrade_items": "Tool Remix"
 }

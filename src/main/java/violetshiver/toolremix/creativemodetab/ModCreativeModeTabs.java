@@ -17,6 +17,11 @@ public class ModCreativeModeTabs {
             FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COPPER_TO_IRON_UPGRADE))
                     .title(Component.translatable("creativemodetab.toolremix.upgrade_items"))
                     .displayItems(((parameters, output) -> {
+
+                        output.accept(ModItems.RAW_COPPER_NUGGET);
+                        output.accept(ModItems.RAW_IRON_NUGGET);
+                        output.accept(ModItems.RAW_GOLD_NUGGET);
+
                         output.accept(ModItems.COPPER_TO_IRON_UPGRADE);
                         output.accept(ModItems.IRON_TO_DIAMOND_UPGRADE);
                     }))

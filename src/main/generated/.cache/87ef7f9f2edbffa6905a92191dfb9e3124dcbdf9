@@ -1,1 +1,13 @@
-// 26.2	-999999999-01-01T00:00:00	Tool Remix/
+// 26.1.2	-999999999-01-01T00:00:00	Tool Remix/
+d32fb55b085f84a2b966885a867fc92cafd0b91e data/tool-remix/advancement/recipes/misc/raw_copper_nugget_to_raw_copper.json
+0a154a81b0143604939aef68a7bff2c84f09b2df data/tool-remix/advancement/recipes/misc/raw_copper_to_raw_copper_nugget.json
+7680925c9140b3470a44b4ed0ad5e3d03cddc96f data/tool-remix/advancement/recipes/misc/raw_gold_nugget_to_raw_gikd.json
+9b76f9e57c17d38f6326b98c1382273b799f6e7d data/tool-remix/advancement/recipes/misc/raw_gold_to_raw_gold_nugget.json
+4671fba9701a9370ee449a272db72324f841b89c data/tool-remix/advancement/recipes/misc/raw_iron_nugget_to_raw_iron.json
+0e2b0226870a45d119c76c54b1c4599db14d4bd9 data/tool-remix/advancement/recipes/misc/raw_iron_to_raw_iron_nugget.json
+e083940c89929dddb244c801446e46f4d2a5b796 data/tool-remix/recipe/raw_copper_nugget_to_raw_copper.json
+da56682732936164cee82783ae86be9b98335e71 data/tool-remix/recipe/raw_copper_to_raw_copper_nugget.json
+b32d3bc5859fa6326cd2d70ccd50bed6992301ac data/tool-remix/recipe/raw_gold_nugget_to_raw_gikd.json
+bf9b1352718d3954a64d527b3161059fa3e9daab data/tool-remix/recipe/raw_gold_to_raw_gold_nugget.json
+d7b12ab231f4ca592c576e17953472ab05e1ab13 data/tool-remix/recipe/raw_iron_nugget_to_raw_iron.json
+78594f34ffe328c9544d841ff08c995ac913131e data/tool-remix/recipe/raw_iron_to_raw_iron_nugget.json
