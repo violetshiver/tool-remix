@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "tool-remix:diamond_upgrade_smithing_template",
+  "base": "farmersdelight:iron_knife",
+  "addition": "minecraft:diamond",
+  "result": {
+    "id": "farmersdelight:diamond_knife"
+  }
+}

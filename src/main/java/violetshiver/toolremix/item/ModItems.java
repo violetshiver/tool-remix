@@ -1,6 +1,7 @@
 package violetshiver.toolremix.item;
 
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -34,8 +35,16 @@ public class ModItems {
 //    private static final Identifier EMPTY_SLOT_CHORUS = Identifier.fromNamespaceAndPath(ToolRemix.MOD_ID, "gui/container/slot/chorus");
 //    private static final Identifier EMPTY_SLOT_ECHO = Identifier.fromNamespaceAndPath(ToolRemix.MOD_ID, "gui/container/slot/echo");
 
+    private static final Identifier EMPTY_SLOT_KNIFE = Identifier.fromNamespaceAndPath(ToolRemix.MOD_ID, "gui/container/slot/knife");
+
     private static List<Identifier> createUpgradeIconList() {
-        return List.of(EMPTY_SLOT_HELMET, EMPTY_SLOT_SWORD, EMPTY_SLOT_CHESTPLATE, EMPTY_SLOT_PICKAXE, EMPTY_SLOT_LEGGINGS, EMPTY_SLOT_AXE, EMPTY_SLOT_BOOTS, EMPTY_SLOT_HOE, EMPTY_SLOT_SHOVEL, EMPTY_SLOT_NAUTILUS_ARMOR, EMPTY_SLOT_SPEAR);
+        List<Identifier> ICON_LIST = new java.util.ArrayList<>(List.of(EMPTY_SLOT_HELMET, EMPTY_SLOT_SWORD, EMPTY_SLOT_CHESTPLATE, EMPTY_SLOT_PICKAXE, EMPTY_SLOT_LEGGINGS, EMPTY_SLOT_AXE, EMPTY_SLOT_BOOTS, EMPTY_SLOT_HOE, EMPTY_SLOT_SHOVEL, EMPTY_SLOT_NAUTILUS_ARMOR, EMPTY_SLOT_SPEAR));
+
+        if (FabricLoader.getInstance().isModLoaded("farmersdelight")) {
+            ICON_LIST.add(EMPTY_SLOT_KNIFE);
+        }
+
+        return ICON_LIST;
     }
 
     public static final Item COPPER_TO_IRON_UPGRADE = Registry.register(BuiltInRegistries.ITEM, (
