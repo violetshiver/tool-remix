@@ -2,11 +2,14 @@ package violetshiver.toolremix.client.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 import violetshiver.toolremix.item.ModItems;
 
@@ -19,8 +22,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     }
 
     @Override
-    protected RecipeProvider createRecipeProvider(HolderLookup.Provider registries, RecipeOutput output) {
-        return new RecipeProvider(registries, output) {
+    protected net.minecraft.data.recipes.RecipeProvider createRecipeProvider(net.minecraft.core.HolderLookup.Provider registries, net.minecraft.data.worldgen.BootstrapContext<net.minecraft.world.item.crafting.Recipe<?>> recipes, net.minecraft.data.worldgen.BootstrapContext<net.minecraft.advancements.Advancement> advancements) {
+        return new RecipeProvider(recipes, advancements) {
 
             @Override
             public void buildRecipes() {
@@ -30,10 +33,5 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 this.nineBlockStorageRecipes(RecipeCategory.MISC, ModItems.RAW_GOLD_NUGGET, RecipeCategory.MISC, Items.RAW_GOLD, "raw_gold_nugget_to_raw_gikd", "raw_ore", "raw_gold_to_raw_gold_nugget", "raw_ore");
             }
         };
-    }
-
-    @Override
-    public String getName() {
-        return "";
     }
 }

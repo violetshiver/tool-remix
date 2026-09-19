@@ -9,9 +9,8 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.EmptyLootItem;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 
-import java.util.List;
 import java.util.Set;
 
 public class ModLootTableHandler {
@@ -29,12 +28,12 @@ public class ModLootTableHandler {
     );
 
     public static void createLootTables(Item copperToIron, Item ironToDiamond) {
-        LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
+        LootTableEvents.MODIFY.register((key, tableBuilder, source, _) -> {
             if (!source.isBuiltin()) return;
 
             if (key.equals(DUNGEON) || key.equals(VAULT)) {
                 tableBuilder.pool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0f))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(1))
                         .add(EmptyLootItem.emptyItem().setWeight(9)).build()
                 );
@@ -42,7 +41,7 @@ public class ModLootTableHandler {
 
             else if (key.equals(CORRIDOR)) {
                 tableBuilder.pool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0f))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(1))
                         .add(EmptyLootItem.emptyItem().setWeight(5)).build()
                 );
@@ -50,7 +49,7 @@ public class ModLootTableHandler {
 
             else if (key.equals(MINESHAFT)) {
                 tableBuilder.pool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0f))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(3))
                         .add(LootItem.lootTableItem(ironToDiamond).setWeight(1))
                         .add(EmptyLootItem.emptyItem().setWeight(8)).build()
@@ -59,7 +58,7 @@ public class ModLootTableHandler {
 
             else if (HOTV_TABLES.contains(key)) {
                 tableBuilder.pool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0f))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(2))
                         .add(LootItem.lootTableItem(ironToDiamond).setWeight(3))
                         .add(EmptyLootItem.emptyItem().setWeight(35)).build()
@@ -68,7 +67,7 @@ public class ModLootTableHandler {
 
             else if (key.equals(OMINOUS_VAULT)) {
                 tableBuilder.pool(LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1.0f))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .add(LootItem.lootTableItem(ironToDiamond).setWeight(1))
                         .add(EmptyLootItem.emptyItem().setWeight(9)).build()
                 );
