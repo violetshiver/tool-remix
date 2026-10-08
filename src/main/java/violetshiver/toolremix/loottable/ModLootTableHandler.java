@@ -1,6 +1,7 @@
 package violetshiver.toolremix.loottable;
 
 import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -27,9 +28,10 @@ public class ModLootTableHandler {
             ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath("minecraft", "gameplay/hero_of_the_village/armorer"))
     );
 
-    public static void createLootTables(Item copperToIron, Item ironToDiamond) {
+    public static void createLootTables(Item copperToIron, Item ironRoseToDiamond, Item ironToRose) {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
             if (!source.isBuiltin()) return;
+            boolean additionalAdditionsLoaded = FabricLoader.getInstance().isModLoaded("additionaladditions");
 
             if (key.equals(DUNGEON) || key.equals(VAULT)) {
                 tableBuilder.pool(LootPool.lootPool()
@@ -51,16 +53,20 @@ public class ModLootTableHandler {
                 tableBuilder.pool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0f))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(3))
-                        .add(LootItem.lootTableItem(ironToDiamond).setWeight(1))
-                        .add(EmptyLootItem.emptyItem().setWeight(8)).build()
+                        .add(LootItem.lootTableItem(ironRoseToDiamond).setWeight(1))
+                        .add(EmptyLootItem.emptyItem().setWeight(7)).build()
                 );
+
+                if (additionalAdditionsLoaded) {
+                    tableBuilder.pool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0f)).add(LootItem.lootTableItem(ironToRose).setWeight(1)).build());
+                }
             }
 
             else if (HOTV_TABLES.contains(key)) {
                 tableBuilder.pool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0f))
                         .add(LootItem.lootTableItem(copperToIron).setWeight(2))
-                        .add(LootItem.lootTableItem(ironToDiamond).setWeight(3))
+                        .add(LootItem.lootTableItem(ironRoseToDiamond).setWeight(3))
                         .add(EmptyLootItem.emptyItem().setWeight(35)).build()
                 );
             }
@@ -68,9 +74,13 @@ public class ModLootTableHandler {
             else if (key.equals(OMINOUS_VAULT)) {
                 tableBuilder.pool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0f))
-                        .add(LootItem.lootTableItem(ironToDiamond).setWeight(1))
+                        .add(LootItem.lootTableItem(ironRoseToDiamond).setWeight(1))
                         .add(EmptyLootItem.emptyItem().setWeight(9)).build()
                 );
+
+                if (additionalAdditionsLoaded) {
+                    tableBuilder.pool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0f)).add(LootItem.lootTableItem(ironToRose).setWeight(1)).build());
+                }
             }
         });
     }

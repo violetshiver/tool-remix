@@ -1,9 +1,11 @@
 {
   "item.tool-remix.iron_upgrade_smithing_template": "Smithing Template",
   "item.tool-remix.diamond_upgrade_smithing_template": "Smithing Template",
+  "item.tool-remix.rose_gold_upgrade_smithing_template": "Smithing Template",
 
   "tool-remix:iron": "Iron Upgrade",
   "tool-remix:diamond": "Diamond Upgrade",
+  "tool-remix:rose_gold": "Rose Gold Upgrade",
 
   "tool-remix:smithing_template.iron.applies_to": "Copper Equipment",
   "tool-remix:smithing_template.iron.ingredients": "Iron Ingot",
@@ -11,11 +13,17 @@
   "tool-remix:smithing_template.iron.base_slot_description": "Add copper armor, weapon, or tool",
   "tool-remix:smithing_template.iron.additions_slot_description": "Add Iron Ingot",
 
-  "tool-remix:smithing_template.diamond.base_slot_description": "Add iron armor, weapon, or tool",
+  "tool-remix:smithing_template.diamond.base_slot_description": "Add armor, weapon, or tool",
   "tool-remix:smithing_template.diamond.additions_slot_description": "Add Diamond",
+
+  "tool-remix:smithing_template.rose_gold.base_slot_description": "Add iron armor, weapon, or tool",
+  "tool-remix:smithing_template.rose_gold.additions_slot_description": "Add Rose Gold Ingot",
 
   "tool-remix:smithing_template.diamond.applies_to": "Iron Equipment",
   "tool-remix:smithing_template.diamond.ingredients": "Diamond",
+
+  "tool-remix:smithing_template.rose_gold.applies_to": "Iron Equipment",
+  "tool-remix:smithing_template.rose_gold.ingredients": "Rose Gold Ingot",
 
   "item.tool-remix.raw_copper_nugget": "Raw Copper Nugget",
   "item.tool-remix.raw_iron_nugget": "Raw Iron Nugget",

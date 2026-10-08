@@ -10,6 +10,8 @@ import violetshiver.toolremix.item.ModCreativeModeTabs;
 import violetshiver.toolremix.item.ModItems;
 import violetshiver.toolremix.loottable.ModLootTableHandler;
 
+import java.util.Optional;
+
 public class ToolRemix implements ModInitializer {
 	public static final String MOD_ID = "tool-remix";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -21,7 +23,7 @@ public class ToolRemix implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModCreativeModeTabs.registerCreativeModTabs();
-		ModLootTableHandler.createLootTables(ModItems.IRON_SMITHING_UPGRADE, ModItems.DIAMOND_SMITHING_UPGRADE);
+		ModLootTableHandler.createLootTables(ModItems.IRON_SMITHING_UPGRADE, ModItems.DIAMOND_SMITHING_UPGRADE, ModItems.ROSE_GOLD_SMITHING_UPGRADE);
 	}
 
 	public static ResourceLocation id(String path) {

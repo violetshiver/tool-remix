@@ -1,6 +1,7 @@
 package violetshiver.toolremix.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -25,6 +26,10 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.IRON_SMITHING_UPGRADE);
                         output.accept(ModItems.DIAMOND_SMITHING_UPGRADE);
+                        if (FabricLoader.getInstance().isModLoaded("additionaladditions")) {
+                            output.accept(ModItems.ROSE_GOLD_SMITHING_UPGRADE);
+                        }
+
                     }))
                     .build()
     );

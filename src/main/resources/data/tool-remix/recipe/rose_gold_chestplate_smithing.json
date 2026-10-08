@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "additionaladditions"
+      ]
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "tool-remix:rose_gold_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "addition": {
+    "item": "additionaladditions:rose_gold_ingot"
+  },
+  "result": {
+    "id": "additionaladditions:rose_gold_chestplate"
+  }
+}

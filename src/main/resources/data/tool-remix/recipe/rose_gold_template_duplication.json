@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "additionaladditions"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#o#",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "o": {
+      "item": "tool-remix:rose_gold_upgrade_smithing_template"
+    },
+    "C": {
+      "item": "additionaladditions:patina_blockz"
+    }
+  },
+  "result": {
+    "id": "tool-remix:rose_gold_upgrade_smithing_template",
+    "count": 2
+  }
+}
